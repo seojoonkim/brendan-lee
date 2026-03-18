@@ -2,9 +2,9 @@
 
 import { useEffect } from "react";
 
-const GOLD = "#C9A84C";
-const NAVY = "#0A1628";
-const NAVY2 = "#0D1F3C";
+const GOLD = "#2DD4A0";      // Emerald green accent
+const NAVY = "#0A1628";      // Deep navy background
+const NAVY2 = "#0D1F3C";     // Slightly lighter navy
 
 const experiences = [
   { company: "Crest & Partners", role: "Founding CEO", period: "Current", desc: "Leading a Seoul-based boutique investment advisory firm specializing in M&A, fundraising, and cross-border transactions for Korean startups and growth-stage companies." },
@@ -75,7 +75,7 @@ export default function Home() {
         .btn-outline { border: 1px solid ${GOLD}; color: ${GOLD}; padding: 14px 36px; font-size: 13px; font-weight: 500; letter-spacing: 0.15em; text-decoration: none; transition: all 0.3s; display: inline-block; }
         .btn-outline:hover { background: ${GOLD}; color: ${NAVY}; }
         .btn-filled { background: ${GOLD}; color: ${NAVY}; padding: 14px 36px; font-size: 13px; font-weight: 600; letter-spacing: 0.15em; text-decoration: none; transition: all 0.3s; display: inline-block; }
-        .btn-filled:hover { background: #D4B85E; }
+        .btn-filled:hover { background: #25BF90; }
         
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: ${NAVY}; }
