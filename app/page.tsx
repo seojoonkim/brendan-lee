@@ -54,7 +54,7 @@ export default function Home() {
         html { scroll-behavior: smooth; }
         body { background: ${NAVY}; color: #fff; font-family: 'Inter', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
         
-        .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .sr { opacity: 1; transform: translateY(0); transition: opacity 0.7s ease, transform 0.7s ease; }
         .sr-visible { opacity: 1; transform: translateY(0); }
         
         @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
