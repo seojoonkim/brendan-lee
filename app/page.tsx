@@ -52,7 +52,9 @@ export default function Home() {
       <style>{`
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-        body { background: ${NAVY}; color: #fff; font-family: 'Inter', -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+        body { background: ${NAVY}; color: #fff; font-family: 'Cormorant Garamond', 'Inter', Georgia, serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3 { font-family: 'Playfair Display', 'Georgia', serif; }
+        nav, .nav-font, .label-font, .btn-outline, .btn-filled, .tag { font-family: 'Inter', -apple-system, sans-serif; }
         
         .sr { opacity: 1; transform: translateY(0); transition: opacity 0.7s ease, transform 0.7s ease; }
         .sr-visible { opacity: 1; transform: translateY(0); }
@@ -110,11 +112,11 @@ export default function Home() {
             Founding CEO · Crest & Partners
           </p>
           
-          <h1 className="hero-name hero-title" style={{ fontSize: "5.5rem", fontWeight: 200, letterSpacing: "-0.02em", lineHeight: 1.1, marginBottom: 16 }}>
-            Brendan Lee
+          <h1 className="hero-name hero-title" style={{ fontSize: "5.5rem", fontWeight: 400, letterSpacing: "-0.01em", lineHeight: 1.1, marginBottom: 16, fontFamily: "'Playfair Display', serif" }}>
+            <span style={{ fontStyle: "italic", fontWeight: 300 }}>Brendan</span>{" "}Lee
           </h1>
-          <p className="hero-title" style={{ fontSize: 18, fontWeight: 300, color: "rgba(255,255,255,0.5)", letterSpacing: "0.2em", marginBottom: 40 }}>
-            이민규, CFA
+          <p className="hero-title label-font" style={{ fontSize: 13, fontWeight: 400, color: "rgba(255,255,255,0.45)", letterSpacing: "0.25em", textTransform: "uppercase", marginBottom: 40 }}>
+            이민규 &nbsp;·&nbsp; CFA
           </p>
           
           <div style={{ width: 48, height: 1, background: `linear-gradient(90deg, transparent, ${GOLD}, transparent)`, margin: "0 auto 32px" }} />
@@ -139,7 +141,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="sr" style={{ marginBottom: 64 }}>
             <p style={{ color: GOLD, fontSize: 11, fontWeight: 600, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 16 }}>About</p>
-            <h2 style={{ fontSize: 42, fontWeight: 300, letterSpacing: "-0.02em", marginBottom: 20 }}>Building Bridges Across Markets</h2>
+            <h2 style={{ fontSize: 44, fontWeight: 400, letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Playfair Display', serif" }}><em style={{ fontStyle: "italic", fontWeight: 300 }}>Building Bridges</em> Across Markets</h2>
             <div className="gold-line" />
           </div>
 
@@ -179,7 +181,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="sr" style={{ textAlign: "center", marginBottom: 80 }}>
             <p style={{ color: GOLD, fontSize: 11, fontWeight: 600, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 16 }}>Experience</p>
-            <h2 style={{ fontSize: 42, fontWeight: 300, letterSpacing: "-0.02em", marginBottom: 20 }}>Professional Journey</h2>
+            <h2 style={{ fontSize: 44, fontWeight: 400, letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Playfair Display', serif" }}><em style={{ fontStyle: "italic", fontWeight: 300 }}>Professional</em> Journey</h2>
             <div className="gold-line" style={{ margin: "0 auto" }} />
           </div>
 
@@ -206,7 +208,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="sr" style={{ textAlign: "center", marginBottom: 80 }}>
             <p style={{ color: GOLD, fontSize: 11, fontWeight: 600, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 16 }}>Expertise</p>
-            <h2 style={{ fontSize: 42, fontWeight: 300, letterSpacing: "-0.02em", marginBottom: 20 }}>Areas of Focus</h2>
+            <h2 style={{ fontSize: 44, fontWeight: 400, letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Playfair Display', serif" }}>Areas of <em style={{ fontStyle: "italic", fontWeight: 300 }}>Focus</em></h2>
             <div className="gold-line" style={{ margin: "0 auto" }} />
           </div>
 
@@ -227,7 +229,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
           <div className="sr" style={{ textAlign: "center", marginBottom: 80 }}>
             <p style={{ color: GOLD, fontSize: 11, fontWeight: 600, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 16 }}>Track Record</p>
-            <h2 style={{ fontSize: 42, fontWeight: 300, letterSpacing: "-0.02em", marginBottom: 20 }}>Selected Deals</h2>
+            <h2 style={{ fontSize: 44, fontWeight: 400, letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Playfair Display', serif" }}><em style={{ fontStyle: "italic", fontWeight: 300 }}>Selected</em> Deals</h2>
             <div className="gold-line" style={{ margin: "0 auto" }} />
           </div>
 
@@ -255,7 +257,7 @@ export default function Home() {
       <section id="contact" style={{ padding: "120px 48px", background: NAVY, textAlign: "center" }}>
         <div className="sr" style={{ maxWidth: 600, margin: "0 auto" }}>
           <p style={{ color: GOLD, fontSize: 11, fontWeight: 600, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 16 }}>Contact</p>
-          <h2 style={{ fontSize: 42, fontWeight: 300, letterSpacing: "-0.02em", marginBottom: 20 }}>Let&apos;s Connect</h2>
+          <h2 style={{ fontSize: 44, fontWeight: 400, letterSpacing: "-0.01em", marginBottom: 20, fontFamily: "'Playfair Display', serif" }}>Let&apos;s <em style={{ fontStyle: "italic", fontWeight: 300 }}>Connect</em></h2>
           <div className="gold-line" style={{ margin: "0 auto 32px" }} />
           <p style={{ fontSize: 18, fontWeight: 300, color: "rgba(255,255,255,0.72)", lineHeight: 1.7, marginBottom: 48 }}>
             Interested in exploring strategic opportunities?<br />I&apos;d welcome the conversation.
