@@ -64,8 +64,8 @@ export default function Home() {
           line-height:1.6;
         }
 
-        /* Scroll reveal */
-        .sr { opacity:0; transform:translateY(20px); transition:opacity 0.65s ease, transform 0.65s ease; }
+        /* Scroll reveal — visible by default, animate in on scroll */
+        .sr { opacity:1; transform:translateY(0); transition:opacity 0.65s ease, transform 0.65s ease; }
         .sr-in { opacity:1; transform:translateY(0); }
 
         /* Hero animations */
